@@ -15,11 +15,25 @@ namespace FormProc
         public Form1()
         {
             InitializeComponent();
+            IsMdiContainer = true;
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            customForm cs = new customForm();
+            cs.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            customForm cs = new customForm();
+            cs.ShowDialog();
         }
     }
 }
